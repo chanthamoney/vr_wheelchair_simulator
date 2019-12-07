@@ -3,17 +3,16 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - OvrAvatar
     - OvrAvatarLocalDriver
-    - OvrAvatarMaterialManager
     - OvrAvatarSettings
     Oculus.VR.Editor.dll:
     - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
-    - OVRGrabber
     - OVRHeadsetEmulator
     - OVRManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
     Assets/catjadetori.unity:
     - Class: 1
@@ -1408,4 +1407,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/catjadetori.unity
-  playerPath: C:/Users/choim/Initial Scene/vrfinal/tea.apk
+  playerPath: E:/School/5619/vrfinal/tea.apk
