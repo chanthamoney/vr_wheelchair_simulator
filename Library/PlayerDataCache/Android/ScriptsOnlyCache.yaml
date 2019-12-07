@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Controllerlocomotion
     - OvrAvatar
     - OvrAvatarLocalDriver
     - OvrAvatarSettings
@@ -59,6 +60,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11420}
     - Class: 114
       Script: {instanceID: 11816}
+    - Class: 114
+      Script: {instanceID: 20194}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1404,6 +1407,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: cc0d759b09965dc972b31c75d06453dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Controllerlocomotion
   platform: 13
   scenePathNames:
   - Assets/catjadetori.unity
