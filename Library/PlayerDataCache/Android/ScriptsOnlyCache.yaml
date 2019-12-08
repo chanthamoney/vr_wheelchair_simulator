@@ -12,6 +12,8 @@ ScriptsOnlyBuild:
     - OVRCameraRig
     - OVRHeadsetEmulator
     - OVRManager
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -54,24 +56,26 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9858}
     - Class: 114
-      Script: {instanceID: 9996}
+      Script: {instanceID: 10000}
     - Class: 114
-      Script: {instanceID: 10310}
+      Script: {instanceID: 10318}
     - Class: 114
-      Script: {instanceID: 10508}
+      Script: {instanceID: 10522}
     - Class: 114
-      Script: {instanceID: 10550}
+      Script: {instanceID: 10566}
     - Class: 114
-      Script: {instanceID: 10716}
+      Script: {instanceID: 10736}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11460}
     - Class: 114
-      Script: {instanceID: 11818}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 12334}
+      Script: {instanceID: 12396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -908,6 +912,12 @@ ScriptsOnlyBuild:
     className: TouchController
   - hash:
       serializedVersion: 2
+      Hash: 8312560a644d6c9007ed42997888218e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EscalatorPro
+    className: Stair
+  - hash:
+      serializedVersion: 2
       Hash: c6c39ad48c140a867a97bff30ed415e8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1142,6 +1152,12 @@ ScriptsOnlyBuild:
     className: ONSPPropagationMaterial
   - hash:
       serializedVersion: 2
+      Hash: c7faad5ded3055716c4bdef4ad735515
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollisionBehavior
+  - hash:
+      serializedVersion: 2
       Hash: ee0cef6caaac8ae485bfa82f000f0f7b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1230,6 +1246,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRGrabber
+  - hash:
+      serializedVersion: 2
+      Hash: c8cd5bc52cf6efc8533a7e3422710126
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EscalatorPro
+    className: EscalatorPro
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1412,7 +1434,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: cc0d759b09965dc972b31c75d06453dc
+      Hash: 3280ca1a92aaa7f34e8aabac107c6a0e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controllerlocomotion
@@ -1422,18 +1444,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 8312560a644d6c9007ed42997888218e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EscalatorPro
-    className: Stair
-  - hash:
-      serializedVersion: 2
-      Hash: c8cd5bc52cf6efc8533a7e3422710126
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: EscalatorPro
-    className: EscalatorPro
   platform: 13
   scenePathNames:
   - Assets/catjadetori.unity

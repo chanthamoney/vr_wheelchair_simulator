@@ -342,6 +342,7 @@
      <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPPropagationSettings.cs" />
      <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPSettings.cs" />
      <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
+     <Compile Include="Assets\Scripts\CollisionBehavior.cs" />
      <Compile Include="Assets\Scripts\Controllerlocomotion.cs" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
      <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
@@ -394,14 +395,14 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>E:/School/5619/vrfinal/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
+ <HintPath>E:/School/5619/vrfinal/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>E:/School/5619/vrfinal/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>E:/School/5619/vrfinal/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
- <HintPath>E:/School/5619/vrfinal/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
