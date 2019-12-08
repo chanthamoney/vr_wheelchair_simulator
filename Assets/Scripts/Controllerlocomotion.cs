@@ -79,6 +79,7 @@ public class Controllerlocomotion : MonoBehaviour
             // if the thumbstick has been pushed outside the dead zone
             if (thumbstickVector.y > moveDeadzone || thumbstickVector.y < -moveDeadzone)
             {
+                Debug.Log(transform.eulerAngles.y + "PLS GOD");
                 // COMPLETE THIS SECTION OF CODE
 
                 // step 1 - create a Vector3 that contains the values for movement
@@ -86,14 +87,20 @@ public class Controllerlocomotion : MonoBehaviour
                 Vector3 movement = new Vector3(0, 0, Time.deltaTime * maxSpeed * thumbstickVector.y);
 
                 // step 2 - multiply by movement vector by the head orientation
-                // this can be retrieved using cameraRig.centerEyeAnchor.rotation
-                var mul = cameraRig.centerEyeAnchor.rotation * movement;
+                // this can be retrieved using cameraRig.centerEyeAnchor.rotation4
+                var mulx = cameraRig.centerEyeAnchor.rotation.x;
+               
+                Debug.Log("LOOK HERE " + cameraRig.centerEyeAnchor.rotation.eulerAngles.y);
 
-                // step 3 - add this movement vector to the current position of the game object
-                // this can be found using transform.localPosition
+            
+                    var mul = cameraRig.centerEyeAnchor.rotation * movement;
 
-                var curPos = transform.localPosition + mul;
-                transform.position = curPos;
+                    // step 3 - add this movement vector to the current position of the game object
+                    // this can be found using transform.localPosition
+
+                    var curPos = transform.localPosition + mul;
+                    transform.position = curPos;
+            
 
             }
             // snap turns
