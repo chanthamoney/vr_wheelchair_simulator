@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Controllerlocomotion
+    - ONSPSettings
     - OvrAvatar
     - OvrAvatarLocalDriver
     - OvrAvatarSettings
@@ -11,8 +12,6 @@ ScriptsOnlyBuild:
     - OVRCameraRig
     - OVRHeadsetEmulator
     - OVRManager
-    Unity.Mobile.AndroidLogcat.Editor.dll:
-    - Unity.Android.Logcat.AndroidLogcatManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -38,6 +37,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -51,22 +52,26 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9856}
+      Script: {instanceID: 9858}
     - Class: 114
-      Script: {instanceID: 9994}
+      Script: {instanceID: 9996}
     - Class: 114
-      Script: {instanceID: 10308}
+      Script: {instanceID: 10310}
     - Class: 114
-      Script: {instanceID: 10548}
+      Script: {instanceID: 10508}
     - Class: 114
-      Script: {instanceID: 10714}
+      Script: {instanceID: 10550}
     - Class: 114
-      Script: {instanceID: 11420}
+      Script: {instanceID: 10716}
     - Class: 114
-      Script: {instanceID: 11816}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 12332}
+      Script: {instanceID: 11818}
+    - Class: 114
+      Script: {instanceID: 12334}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1417,6 +1422,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8312560a644d6c9007ed42997888218e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EscalatorPro
+    className: Stair
+  - hash:
+      serializedVersion: 2
+      Hash: c8cd5bc52cf6efc8533a7e3422710126
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EscalatorPro
+    className: EscalatorPro
   platform: 13
   scenePathNames:
   - Assets/catjadetori.unity
