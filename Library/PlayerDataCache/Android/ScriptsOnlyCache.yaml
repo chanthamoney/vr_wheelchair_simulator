@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CollisionBehavior
     - Controllerlocomotion
     - ONSPSettings
     - OvrAvatar
@@ -12,8 +13,6 @@ ScriptsOnlyBuild:
     - OVRCameraRig
     - OVRHeadsetEmulator
     - OVRManager
-    Unity.Mobile.AndroidLogcat.Editor.dll:
-    - Unity.Android.Logcat.AndroidLogcatManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -68,14 +67,14 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11460}
     - Class: 114
+      Script: {instanceID: 11730}
+    - Class: 114
       Script: {instanceID: 11866}
     - Class: 114
       Script: {instanceID: 12396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
-      Script: {instanceID: 0}
-    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1434,7 +1433,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 3280ca1a92aaa7f34e8aabac107c6a0e
+      Hash: 9a377d39c47de15e0ed0277d3fb822b1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controllerlocomotion
@@ -1447,4 +1446,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/catjadetori.unity
-  playerPath: E:/School/5619/vrfinal/tea.apk
+  playerPath: C:/Users/Cassandra/Documents/GitHub/vrfinal/tea.apk
