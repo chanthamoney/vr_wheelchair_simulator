@@ -9030,18 +9030,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09500bdfcf440d24fa374071c77b8013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nav: 0
   controller: 1
   maxSpeed: 3
   moveDeadzone: 0.2
-  turnDeadzone: 0.75
-  isTurn: 0
-  lineColor: {r: 0, g: 0, b: 0, a: 1}
-  lineWidth: 0.01
-  isPressed: 0
-  rayPoint: {x: 0, y: 0, z: 0}
-  transitionTime: 0.1
-  transitionDistance: 4
+  snapturnThreshold: 0.75
+  canTurn: 1
+  canSwitch: 1
+  rb: {fileID: 0}
 --- !u!114 &578896546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9051,12 +9046,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 578896544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 451349cb60d90ef42939dea1c3a849c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 09500bdfcf440d24fa374071c77b8013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: 1
+  maxSpeed: 3
+  moveDeadzone: 0.2
+  snapturnThreshold: 0.75
+  canTurn: 1
+  canSwitch: 1
   rb: {fileID: 578896548}
---- !u!65 &578896547
-BoxCollider:
+--- !u!136 &578896547
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9065,8 +9066,9 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &578896548
 Rigidbody:
@@ -18538,18 +18540,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09500bdfcf440d24fa374071c77b8013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nav: 0
   controller: 1
   maxSpeed: 3
   moveDeadzone: 0.2
-  turnDeadzone: 0.75
-  isTurn: 0
-  lineColor: {r: 0, g: 0, b: 0, a: 1}
-  lineWidth: 0.01
-  isPressed: 0
-  rayPoint: {x: 0, y: 0, z: 0}
-  transitionTime: 0.1
-  transitionDistance: 4
+  snapturnThreshold: 0.75
+  canTurn: 1
+  canSwitch: 1
+  rb: {fileID: 0}
 --- !u!1 &1225205820
 GameObject:
   m_ObjectHideFlags: 0
