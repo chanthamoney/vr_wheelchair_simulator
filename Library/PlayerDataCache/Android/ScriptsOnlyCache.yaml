@@ -1,21 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Controllerlocomotion
-    - OvrAvatar
-    - OvrAvatarLocalDriver
+    - ONSPSettings
     - OvrAvatarSettings
     Oculus.VR.Editor.dll:
     - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
+    - OVRDebugInfo
     - OVRHeadsetEmulator
     - OVRManager
+    - OVRPlayerController
+    - OVRSceneSampleController
+    - OVRScreenFade
     Unity.Mobile.AndroidLogcat.Editor.dll:
     - Unity.Android.Logcat.AndroidLogcatManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
     Assets/catjadetori.unity:
     - Class: 1
@@ -36,9 +37,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -50,25 +53,35 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 109
       Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9856}
+      Script: {instanceID: 9858}
     - Class: 114
-      Script: {instanceID: 9994}
+      Script: {instanceID: 10000}
     - Class: 114
-      Script: {instanceID: 10308}
+      Script: {instanceID: 10212}
     - Class: 114
-      Script: {instanceID: 10548}
+      Script: {instanceID: 10522}
     - Class: 114
-      Script: {instanceID: 10714}
+      Script: {instanceID: 10566}
     - Class: 114
-      Script: {instanceID: 11420}
+      Script: {instanceID: 10736}
     - Class: 114
-      Script: {instanceID: 11816}
+      Script: {instanceID: 10868}
     - Class: 114
-      Script: {instanceID: 12332}
+      Script: {instanceID: 10976}
+    - Class: 114
+      Script: {instanceID: 11504}
+    - Class: 114
+      Script: {instanceID: 11864}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 205
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -903,6 +916,12 @@ ScriptsOnlyBuild:
     className: TouchController
   - hash:
       serializedVersion: 2
+      Hash: 8312560a644d6c9007ed42997888218e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EscalatorPro
+    className: Stair
+  - hash:
+      serializedVersion: 2
       Hash: c6c39ad48c140a867a97bff30ed415e8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1227,6 +1246,12 @@ ScriptsOnlyBuild:
     className: OVRGrabber
   - hash:
       serializedVersion: 2
+      Hash: c8cd5bc52cf6efc8533a7e3422710126
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: EscalatorPro
+    className: EscalatorPro
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1420,4 +1445,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/catjadetori.unity
-  playerPath: E:/School/5619/vrfinal/tea.apk
+  playerPath: C:/Users/choim/Initial Scene/vrfinal/tea.apk
