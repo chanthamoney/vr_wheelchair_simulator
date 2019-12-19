@@ -14,11 +14,9 @@ public class WalkingPhoneCollisions : MonoBehaviour
     public GameObject canvas;
     public bool isCanvasActive;
     public GameObject wheelChair;
-    public GameObject walking;
+ //   public GameObject walking;
     private bool isWalking;
     private bool isWheelchair;
-    private Vector3 orgPositionWC;
-    private Vector3 orgPositionWK;
 
     // Start is called before the first frame update
     void Start()
@@ -28,10 +26,8 @@ public class WalkingPhoneCollisions : MonoBehaviour
         originalColor2 = renderer2.color;
         originalColor3 = renderer3.color;
         isCanvasActive = canvas.activeInHierarchy;
-        orgPositionWC = wheelChair.transform.localPosition;
-        orgPositionWK = walking.transform.localPosition;
-        isWalking = walking.activeInHierarchy;
-        isWheelchair = wheelChair.activeInHierarchy;
+        isWalking = false;
+        isWheelchair = true;
     }
 
     // Update is called once per frame
@@ -46,24 +42,26 @@ public class WalkingPhoneCollisions : MonoBehaviour
         {
             renderer1.color = new Color(0.783f, 0.783f, 0.783f, 1f);
             // set to wheelchair
-            if (isWalking)
+            if (isWalking) // is walking now, switch to wheelchair
             {
+                wheelChair.GetComponent<OvrPlayerControllerModified>().enabled = true;
+                wheelChair.GetComponent<OVRPlayerController>().enabled = false;
                 isWalking = false;
                 isWheelchair = true;
                 //   wheelChair.transform.localPosition = orgPositionWC;
             }
-            else
+            else // is wheelchair now, switch to walking
             {
                 Debug.Log("Switching to walking");
+                wheelChair.GetComponent<OvrPlayerControllerModified>().enabled = false;
+                wheelChair.GetComponent<OVRPlayerController>().enabled = true;
                 isWalking = true;
                 isWheelchair = false;
                 //   walking.transform.localPosition = orgPositionWK;
             }
 
-            walking.SetActive(isWalking);
-            wheelChair.SetActive(isWheelchair);
-            Debug.Log("Walking: " + walking.activeInHierarchy);
-            Debug.Log("Wheelchair " + wheelChair.activeInHierarchy);
+           // walking.SetActive(isWalking);
+           // wheelChair.SetActive(isWheelchair);
         }
         else if (other.gameObject.name == "WalkingCollider")
         {

@@ -66,6 +66,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -125,6 +129,8 @@ ScriptsOnlyBuild:
     - Class: 135
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -1521,13 +1527,13 @@ ScriptsOnlyBuild:
     className: ShowOrHidePhone
   - hash:
       serializedVersion: 2
-      Hash: 0d764b3f6b58abbec85deb0e6ef4c9dd
+      Hash: 30d88e28777b0042a4aefe6d8ef17818
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhoneCollision
   - hash:
       serializedVersion: 2
-      Hash: 0d764b3f6b58abbec85deb0e6ef4c9dd
+      Hash: 87275bcaa847a8856d489f21ae6626ff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WalkingPhoneCollisions

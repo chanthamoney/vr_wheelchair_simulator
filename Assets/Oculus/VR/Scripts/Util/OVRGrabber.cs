@@ -360,7 +360,7 @@ public class OVRGrabber : MonoBehaviour
         curPos = wheel.transform.rotation * curPos;
         wheel.transform.localPosition += curPos;
         Quaternion initialRotation = m_grabbedObj.transform.localRotation;
-        m_grabbedObj.transform.localRotation = Quaternion.Euler(30 * Time.deltaTime, 0, 0) * initialRotation;
+        m_grabbedObj.transform.localRotation = Quaternion.Euler(-30 * Time.deltaTime, 0, 0) * initialRotation;
         //if (allowWheelMove % 360 == 0)
         //{
         // m_grabbedObj.transform.RotateAround(m_grabbedObj.transform.position, Vector3.right, 30 * Time.deltaTime);
@@ -507,7 +507,7 @@ public class OVRGrabber : MonoBehaviour
             }
             else
             {
-                float rotating = 45;
+                float rotating = 22.5f;
                 allowWheelMove += 45;
                 wheel.transform.rotation *= Quaternion.AngleAxis(rotating, Vector3.up);
                 turning = true;
@@ -525,7 +525,7 @@ public class OVRGrabber : MonoBehaviour
             }
             else
             {
-                float rotating = -45;
+                float rotating = -22.5f;
                 allowWheelMove -= 45;
                 wheel.transform.rotation *= Quaternion.AngleAxis(rotating, Vector3.up);
                 turning = true;

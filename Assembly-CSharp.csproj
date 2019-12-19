@@ -385,6 +385,7 @@
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\AvatarEyeLens.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShader.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
+    <None Include="Assets\Ornamental Flower Set\Shaders\Transparent-BumpSpecNoCull.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/choim/Initial Scene/vrfinal/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
