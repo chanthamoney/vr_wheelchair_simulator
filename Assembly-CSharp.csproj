@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\elevatormove.cs" />
     <Compile Include="Assets\EscalatorPro\Script\Runtime\EscalatorPro.cs" />
     <Compile Include="Assets\EscalatorPro\Script\Runtime\Stair.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
@@ -350,6 +351,7 @@
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPPropagationSettings.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPSettings.cs" />
     <Compile Include="Assets\Oculus\Spatializer\scripts\ONSPVersion.cs" />
+    <Compile Include="Assets\on_collide.cs" />
     <Compile Include="Assets\Scripts\OvrPlayerControllerModified.cs" />
     <Compile Include="Assets\Scripts\PhoneCollision.cs" />
     <Compile Include="Assets\Scripts\ShowOrHidePhone.cs" />

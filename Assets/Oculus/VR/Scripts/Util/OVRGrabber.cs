@@ -113,7 +113,7 @@ public class OVRGrabber : MonoBehaviour
 
     protected virtual void Start()
     {
-        Debug.Log("STARTING...");
+        // Debug.Log("STARTING...");
         m_lastPos = transform.position;
         m_lastRot = transform.rotation;
         if (m_parentTransform == null)
@@ -177,7 +177,7 @@ public class OVRGrabber : MonoBehaviour
 
     void OnTriggerEnter(Collider otherCollider)
     {
-        Debug.Log("Trigger Pressed");
+        // Debug.Log("Trigger Pressed");
         // Get the grab trigger
         OVRGrabbable grabbable = otherCollider.GetComponent<OVRGrabbable>() ?? otherCollider.GetComponentInParent<OVRGrabbable>();
         if (grabbable == null) return;
@@ -195,7 +195,7 @@ public class OVRGrabber : MonoBehaviour
 
         // Remove the grabbable
         int refCount = 0;
-        Debug.Log("TRIGGER EXITING...");
+        // Debug.Log("TRIGGER EXITING...");
         bool found = m_grabCandidates.TryGetValue(grabbable, out refCount);
         if (!found)
         {
@@ -227,7 +227,7 @@ public class OVRGrabber : MonoBehaviour
 
     protected virtual void GrabBegin()
     {
-        Debug.Log("Grabbing Now!");
+        // Debug.Log("Grabbing Now!");
         float closestMagSq = float.MaxValue;
         grabbing = true;
         OVRGrabbable closestGrabbable = null;
@@ -351,7 +351,6 @@ public class OVRGrabber : MonoBehaviour
 
     void MoveForward(GameObject wheel, float move)
     {
-        Debug.Log("fuck me");
         if (move < 0.005 && move > 0.005)
         {
             return;
@@ -417,7 +416,7 @@ public class OVRGrabber : MonoBehaviour
 
     protected void GrabEnd()
     {
-        Debug.Log("Hey Time to End the Grab!");
+        // Debug.Log("Hey Time to End the Grab!");
         if (m_grabbedObj != null)
         {
             OVRPose localPose = new OVRPose { position = OVRInput.GetLocalControllerPosition(m_controller), orientation = OVRInput.GetLocalControllerRotation(m_controller) };

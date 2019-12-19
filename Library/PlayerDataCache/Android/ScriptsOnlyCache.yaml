@@ -9,6 +9,8 @@ ScriptsOnlyBuild:
     - PhoneCollision
     - ShowOrHidePhone
     - WalkingPhoneCollisions
+    - elevatormove
+    - on_collide
     Oculus.VR.Editor.dll:
     - OVRConfig
     Oculus.VR.dll:
@@ -62,6 +64,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
     - Class: 89
@@ -79,51 +85,55 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9790}
+      Script: {instanceID: 9792}
     - Class: 114
-      Script: {instanceID: 9860}
+      Script: {instanceID: 9862}
     - Class: 114
-      Script: {instanceID: 10002}
+      Script: {instanceID: 10004}
     - Class: 114
-      Script: {instanceID: 10214}
+      Script: {instanceID: 10216}
     - Class: 114
-      Script: {instanceID: 10320}
+      Script: {instanceID: 10322}
     - Class: 114
-      Script: {instanceID: 10524}
+      Script: {instanceID: 10526}
     - Class: 114
-      Script: {instanceID: 10568}
+      Script: {instanceID: 10570}
     - Class: 114
-      Script: {instanceID: 10620}
+      Script: {instanceID: 10622}
     - Class: 114
-      Script: {instanceID: 10740}
+      Script: {instanceID: 10742}
     - Class: 114
-      Script: {instanceID: 10796}
+      Script: {instanceID: 10798}
     - Class: 114
-      Script: {instanceID: 10876}
+      Script: {instanceID: 10878}
     - Class: 114
-      Script: {instanceID: 10984}
+      Script: {instanceID: 10986}
     - Class: 114
-      Script: {instanceID: 11138}
+      Script: {instanceID: 11140}
     - Class: 114
-      Script: {instanceID: 11220}
+      Script: {instanceID: 11222}
     - Class: 114
-      Script: {instanceID: 11468}
+      Script: {instanceID: 11470}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 11826}
+      Script: {instanceID: 11692}
     - Class: 114
-      Script: {instanceID: 11872}
+      Script: {instanceID: 11830}
     - Class: 114
-      Script: {instanceID: 11960}
+      Script: {instanceID: 11876}
     - Class: 114
-      Script: {instanceID: 12324}
+      Script: {instanceID: 11964}
     - Class: 114
-      Script: {instanceID: 33896}
+      Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 65542}
+      Script: {instanceID: 12330}
     - Class: 114
-      Script: {instanceID: 349026}
+      Script: {instanceID: 12354}
+    - Class: 114
+      Script: {instanceID: 39530}
+    - Class: 114
+      Script: {instanceID: 79070}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -1227,6 +1237,12 @@ ScriptsOnlyBuild:
     className: OvrAvatarMaterialManager
   - hash:
       serializedVersion: 2
+      Hash: 30d88e28777b0042a4aefe6d8ef17818
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PhoneCollision
+  - hash:
+      serializedVersion: 2
       Hash: 349fc863c5f9c0b3f7471af2e318712a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1419,6 +1435,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 956fb7af3821c9394e32d7d8437e487d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowOrHidePhone
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1473,6 +1495,12 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: 87275bcaa847a8856d489f21ae6626ff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WalkingPhoneCollisions
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1521,23 +1549,17 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 956fb7af3821c9394e32d7d8437e487d
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ShowOrHidePhone
+    className: elevatormove
   - hash:
       serializedVersion: 2
-      Hash: 30d88e28777b0042a4aefe6d8ef17818
+      Hash: 07f7a20b51c51755d3fbf99a0fcc7cd2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PhoneCollision
-  - hash:
-      serializedVersion: 2
-      Hash: 87275bcaa847a8856d489f21ae6626ff
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: WalkingPhoneCollisions
+    className: on_collide
   platform: 13
   scenePathNames:
   - Assets/catjadetori.unity
-  playerPath: C:/Users/choim/Initial Scene/vrfinal/tea.apk
+  playerPath: C:/Users/choim/Documents/UMN/VR/wheelchair_to_Edelgard.apk
